@@ -3,7 +3,7 @@ import SingleCat from './SingleCat';
 
 const cats = [
   { id: 1, name: 'Cheetah', latinName: 'Acinonyx jubatus', image: 'module6Lab/src/assets/cheetah.jpg' },
-  { id: 2, name: 'Cougar', latinName: 'Puma concolor', image: '/cougar.jpg' },
+  { id: 2, name: 'Cougar', latinName: 'Puma concolor', image: 'module6Lab/src/assets/cougar.jpg' },
   { id: 3, name: 'Jaguar', latinName: 'Panthera onca', image: '/jaguar.jpg' },
   { id: 4, name: 'Leopard', latinName: 'Panthera pardus', image: '/leopard.jpg' },
   { id: 5, name: 'Lion', latinName: 'Panthera leo', image: 'lion.jpg' },
