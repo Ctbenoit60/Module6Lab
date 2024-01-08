@@ -1,15 +1,19 @@
-import React from 'react';
+import { useState } from "react";
 
-const SingleCat = ({ id, name, latinName, image }) => {
+const Singlecat = ({ cat, onDelete }) => {
   return (
-    <div key={id} className="cat-item">
-      <img src={image} alt={name} />
-      <div>
-        <h3>{name}</h3>
-        <p>{latinName}</p>
-      </div>
+    <div className='cat-card'>
+      <h2>{cat.name}</h2>
+      <p>{cat.latinName}</p>
+      <img
+        src={cat.image}
+        alt={cat.name}
+        style={{ width: "100px", height: "100px" }}
+      />
+      <br />
+      <button onClick={() => onDelete(cat.name)}>Delete</button>
     </div>
   );
 };
 
-export default SingleCat;
+export default Singlecat;
